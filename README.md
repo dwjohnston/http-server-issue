@@ -1,6 +1,8 @@
 # http-server-issue
 Reproducing an issue with http-server and proxying with https. 
 
+Raised issue here: https://github.com/http-party/http-server/issues/719
+
 ## Instructions
 
 1. Run `yarn create-ssl` to create the SSL certificate and key. 
