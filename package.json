@@ -1,0 +1,16 @@
+{
+  "name": "http-server-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^13.0.0"
+  },
+  "scripts": {
+    "create-ssl": "./gen-ssl.sh", 
+    "start": "http-server ./lib -p 8080", 
+    "start:secure": "http-server ./lib -S -C localhost.crt -K localhost.key -p 8080", 
+    "start:proxy": "http-server --proxy http://localhost:8080? ./lib -p 8080", 
+    "start:proxy:secure": "http-server --proxy https://localhost:8080?./lib -S -C localhost.crt -K localhost.key -p 8080"
+  }
+}
