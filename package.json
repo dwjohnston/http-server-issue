@@ -11,6 +11,6 @@
     "start": "http-server ./lib -p 8080", 
     "start:secure": "http-server ./lib -S -C localhost.crt -K localhost.key -p 8080", 
     "start:proxy": "http-server --proxy http://localhost:8080? ./lib -p 8080", 
-    "start:proxy:secure": "http-server --proxy https://localhost:8080?./lib -S -C localhost.crt -K localhost.key -p 8080"
+    "start:proxy:secure": "http-server --proxy https://localhost:8080? ./lib -S -C localhost.crt -K localhost.key -p 8080"
   }
 }
